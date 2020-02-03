@@ -2,12 +2,12 @@
 
 This notebook contains the samplers from the papers ["Stochastic Gradient MCMC with Repulsive Forces"](https://arxiv.org/abs/1812.00071) and "Accelerating Stochastic Gradient Markov Chain Monte Carlo with Momentum and Repulsive Forces" (to appear soon).
 
-All the samplers are implemented in [jax](https://github.com/google/jax/). You can open the notebook and then run it in Colab.
+All the samplers are implemented in [jax](https://github.com/google/jax/). You can open the notebooks and then run it in Colab.
 
 
 ### SG-MCMC samplers
 
-The implemented samplers/optimizers are:
+The implemented samplers/optimizers are located in ```Samplers_jax.ipynb```. The implemented ones are:
 
 * SVGD (Stein Variational Gradient Descend)
 
@@ -23,6 +23,10 @@ The implemented samplers/optimizers are:
 
 
 All the samplers are vectorized and use ```jit``` for increased performance, with an emphasis on simplicity. The notebook constains a standard Gaussian as the target distribution.
+
+### Gaussian example
+
+See the notebook ```Gaussian_example_jax.ipynb``` for a comparison between SVGD and SGLD+R.
 
 
 ### Citation
